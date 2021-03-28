@@ -91,7 +91,7 @@ def mai(mail, jml):
 	for x in range(jml):
 	  cal = r.post("https://badgr.com/api/ui/entity",headers=head,data=dat)
 	  if '@type' in cal.text:
-	       print(f"{k}[+] {c}Spam ke {k}{mail} {c}Berhasil ")
+	       print(f"{k}[+] {c}Spam ke {k}{mail} {c}send ")
 	       sleep(1.5)
 	  else:
 	       print(f"{k}[+] {c}Spam ke {k}{mail} {c}Gagal!! ")
